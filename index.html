@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- NAVBAR SECTION -->
+    <nav id="navbar">
+        <header>JavaScript Fundamentals</header>
+        <button id="menu-toggle" aria-expanded="false" aria-label="Toggle Menu">
+            <span class="material-icons">menu</span>
+        </button>
+        <div id="mobile-menu" class="hidden">
+            <button id="close-menu"><span class="material-icons">close</span></button>
+            <ul>
+                <li><a class="nav-link" href="#Introduction_to_JavaScript">Introduction to JavaScript</a></li>
+                <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+                <li><a class="nav-link" href="#Variables">Variables</a></li>
+                <li><a class="nav-link" href="#Operators">Operators</a></li>
+                <li><a class="nav-link" href="#Control_Structures">Control Structures</a></li>
+                <li><a class="nav-link" href="#Functions">Functions</a></li>
+                <li><a class="nav-link" href="#Objects_and_Arrays">Objects and Arrays</a></li>
+                <li><a class="nav-link" href="#Events">Events</a></li>
+                <li><a class="nav-link" href="#DOM_Manipulation">DOM Manipulation</a></li>
+                <li><a class="nav-link" href="#Error_Handling">Error Handling</a></li>
+                <li><a class="nav-link" href="#Asynchronous_JavaScript">Asynchronous JavaScript</a></li>
+                <li><a class="nav-link" href="#Modern_JavaScript_Features">Modern JavaScript Features</a></li>
+            </ul>
+        </div>
+        <ul class="desktop-menu">
+            <li><a class="nav-link" href="#Introduction_to_JavaScript">Introduction to JavaScript</a></li>
+            <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+            <li><a class="nav-link" href="#Variables">Variables</a></li>
+            <li><a class="nav-link" href="#Operators">Operators</a></li>
+            <li><a class="nav-link" href="#Control_Structures">Control Structures</a></li>
+            <li><a class="nav-link" href="#Functions">Functions</a></li>
+            <li><a class="nav-link" href="#Objects_and_Arrays">Objects and Arrays</a></li>
+            <li><a class="nav-link" href="#Events">Events</a></li>
+            <li><a class="nav-link" href="#DOM_Manipulation">DOM Manipulation</a></li>
+            <li><a class="nav-link" href="#Error_Handling">Error Handling</a></li>
+            <li><a class="nav-link" href="#Asynchronous_JavaScript">Asynchronous JavaScript</a></li>
+            <li><a class="nav-link" href="#Modern_JavaScript_Features">Modern JavaScript Features</a></li>
+        </ul>
+    </nav>
+    
+    
+
+<main id="main-doc">
+    <!-- INTRODUCTION TO JAVASCRIPT -->
+    <section class="main-section" id="Introduction_to_JavaScript">
+        <header>Introduction to JavaScript</header>
+        <p><strong>Definition:</strong> JavaScript is a high-level, dynamic, and interpreted programming language primarily used for creating interactive effects within web browsers and building web applications.</p>
+        <h1>Use:</h1>
+        <p>It enables developers to implement complex features on web pages, enhancing user interaction.</p>
+    </section>
+
+    <!-- DATA TYPES -->
+    <section class="main-section" id="Data_Types">
+        <header>Data Types</header>
+        <p><strong>Definition:</strong> Data types specify the kind of value a variable can hold. JavaScript supports both primitive and reference data types.</p>
+        <h2>Primitive Types:</h2>
+        <ul>
+            <li><strong>String:</strong> A sequence of characters (e.g., <span class="jLanguage">"Hello, World!"</span>).</li>
+            <li><strong>Number:</strong> Represents both integer and floating-point numbers (e.g., <span class="jLanguage">42</span>, <span class="jLanguage">3.14</span>).</li>
+            <li><strong>Boolean:</strong> A logical value indicating <span class="jLanguage">true</span> or <span class="jLanguage">false</span>.</li>
+            <li><strong>Null:</strong> A special value representing the intentional absence of any value.</li>
+            <li><strong>Undefined:</strong> A variable that has been declared but not assigned a value.</li>
+            <li><strong>Symbol:</strong> A unique and immutable value primarily used as object property keys.</li>
+        </ul>
+        <h2>Reference Types:</h2>
+        <ul>
+            <li><strong>Object:</strong> A collection of key-value pairs (e.g., <span class="jLanguage">{ name: "Alice", age: 25 }</span>).</li>
+            <li><strong>Array:</strong> A special type of object that stores ordered collections (e.g., <span class="jLanguage">[1, 2, 3]</span>).</li>
+        </ul>
+        <h2>Use:</h2>
+        <p>Different data types allow for varied data representation and manipulation.</p>
+    </section>
+
+    <!-- VARIABLES -->
+    <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <p><strong>Definition:</strong> Variables are containers for storing data values. They can be declared using <span class="jLanguage">var</span>,<span class="jLanguage"> let</span> , or <span class="jLanguage">const</span>.</p>
+        <ul>
+            <li><strong>var:</strong> Declares a variable that can be function-scoped or globally scoped.</li>
+            <li><strong>let:</strong> Declares a block-scoped variable that can be updated but not re-declared.</li>
+            <li><strong>const:</strong> Declares a block-scoped variable that cannot be updated or re-declared after assignment.</li>
+        </ul>
+        <h2>Use:</h2>
+        <p>Variables allow for dynamic data handling throughout your code.</p>
+    </section>
+
+    <!-- OPERATORS -->
+    <section class="main-section" id="Operators">
+        <header>Operators</header>
+        <p><strong>Definition:</strong> Operators are special symbols that perform operations on variables and values.</p>
+        <ul>
+            <li><strong>Arithmetic Operators:</strong> Used for mathematical calculations (e.g.,<span class="jLanguage"> +, -, *, /, %</span>).</li>
+            <li><strong>Comparison Operators:</strong> Compare values and return a Boolean (e.g.,<span class="jLanguage"> ==, ===, !=, !==, <, ></span>).</li>
+            <li><strong>Logical Operators:</strong> Combine Boolean values (e.g.,<span class="jLanguage"> &&, ||, !</span>).</li>
+            <li><strong>Assignment Operators:</strong> Assign values to variables (e.g.,<span class="jLanguage"> =, +=, -=</span>).</li>
+        </ul>
+        <h2>Use:</h2>
+        <p>Operators enable the manipulation and comparison of data within your code.</p>
+    </section>
+
+
+<!-- CONTROL STRUCTURES -->
+    <section class="main-section" id="Control_Structures">
+        <header>Control Structures</header>
+        <p><strong>Definition:</strong> Control structures direct the flow of execution in JavaScript programs.</p>
+        <p><strong>Conditional Statements:</strong> Execute code based on specific conditions.</p>
+        <ul>
+            <li><span class="jLanguage">if, else if, else</span></li>
+            <li><span class="jLanguage">switch</span></li>
+        </ul>
+        <p><strong>Loops:</strong> Execute a block of code repeatedly.</p>
+        <ul>
+            <li><span class="jLanguage">for, while, do...while</span></li>
+        </ul>
+        <h2>Use:</h2>
+        <p>Control structures allow for decision-making and repetitive tasks in programming.</p>
+    </section>
+
+    <!-- FUNCTIONS -->
+    <section class="main-section" id="Functions">
+        <header>Functions</header>
+        <p><strong>Definition:</strong> Functions are reusable blocks of code that perform a specific task when called.</p>
+        <ul>
+            <li><strong>Function Declaration:</strong> A named function defined with the function keyword.</li>
+            <div class="code-back">
+                <p>JavaScript</p>
+            </div>
+            <div class="code-back-bottom">
+                <p><span style="color:blue;">function</span> <span style="color: red;">myFunction</span>() { </br>
+                    <span style="padding-left: 20px; color: gray"> //code</span></br>
+                }</p>
+            </div>
+
+            <li><strong>Function Expression:</strong> A function defined within an expression.</li>
+            <div class="code-back">
+                <p>JavaScript</p>
+            </div>
+            <div class="code-back-bottom">
+                <p><span style="color: blue;">const</span> myFunction = <span style="color: blue;">function</span>() {</br>
+                    <span style="padding-left: 20px; color: gray"> //code</span></br>
+                };</p>
+            </div>
+
+            <li><strong>Arrow Functions:</strong> A concise syntax for writing function expressions.</li>
+            <div class="code-back">
+                <p>JavaScript</p>
+            </div>
+            <div class="code-back-bottom">
+                <p><span style="color: blue;">const</span> <span style="color: red;">myFunction</span> = () => {</br>
+                    <span style="padding-left: 20px; color: gray"> //code</span></br>
+                }</p>
+            </div>
+        </ul>
+        <h2>Use:</h2>
+        <p>Functions encapsulate code for reuse, improving code organization and maintainability.</p>
+    </section>
+
+<!-- OBJECTS AND ARRAYS -->
+    <section class="main-section" id="Objects_and_Arrays">
+        <header>Objects and Arrays</header>
+        <p><strong>Definition:</strong> Objects and arrays are complex data structures used to store collections of data.</p>
+        <ul>
+            <li><strong>Creating Objects:</strong></li>
+            <div class="code-back">
+                <p>JavaScript</p>
+            </div>
+            <div class="code-back-bottom">
+                <p><span style="color: blue;">const</span> person = { <span style="color: maroon;">name</span>: <span style="color: green;">"Alice"</span>, <span style="color: maroon;">age</span>: <span style="color: maroon;">25</span>};</p>
+            </div>
+
+            <li><strong>Accessing Properties:</strong> Use dot notation or bracket notation.</li>
+            <div class="code-back">
+                <p>JavaScript</p>
+            </div>
+            <div class="code-back-bottom">
+                <p>person.name; <span style="color: gray">// "Alice"</span></p>
+            </div>
+
+            <li><strong>Creating Arrays:</strong></li>
+            <div class="code-back">
+                <p>JavaScript</p>
+            </div>
+            <div class="code-back-bottom">
+                <p><span style="color: blue;">const</span> numbers = [<span style="color: maroon;">1</span>, <span style="color: maroon;">2</span>, <span style="color: maroon;">3</span>];</p>
+            </div>
+        </ul>
+        <h2>Use:</h2>
+        <p>Objects store related data, while arrays store ordered lists, allowing structured data manipulation.</p>
+    </section>
+
+    <!-- EVENTS -->
+    <section class="main-section" id="Events">
+        <header>Events</header>
+        <p><strong>Definition:</strong> Events are actions or occurrences that happen in the browser, often triggered by user interactions.</p>
+        <h1>Use:</h1>
+        <p>JavaScript can respond to events such as clicks, key presses, or mouse movements.</p>
+        <ul>
+            <li><span class="definitions">Event Listeners:</span> Functions that listen for specific events and execute code in response.</li>
+            <div class="code-back">
+                <p>JavaScript</p>
+            </div>
+            <div class="code-back-bottom">
+                <p><span style="color: maroon;">document</span>.<span style="color: red;">getElementById</span>(<span style="color: green;">"myButton"</span>).<span style="color: red;">addEventListener</span>(<span style="color: green;">"click"</span>, <span style="color: blue;">function</span>() {</br>
+                    <span style="padding-left: 20px; color: gray;"> // code to execute on click</span> </br>
+                });</p>
+            </div>
+        </ul>
+    </section>
+
+    <!-- DOM MANIPULATION -->
+    <section class="main-section" id="DOM_Manipulation">
+        <header>DOM Manipulation</header>
+        <p><strong>Definition:</strong> The Document Object Model (DOM) is a programming interface for HTML and XML documents. JavaScript can manipulate the DOM to change document structure, style, and content.</p>
+        <h1>Use:</h1>
+        <p>JavaScript enables dynamic updates to the content and style of web pages.</p>
+        <ul>
+            <li>Selecting Elements:</li>
+            <div class="code-back">
+                <p>JavaScript</p>
+            </div>
+            <div class="code-back-bottom">
+                <p><span style="color: blue;">const</span> element = <span style="color: maroon;">document</span>.<span style="color: red;">querySelector</span>(<span style="color: green;">".myClass"</span>);</p>
+            </div>
+
+            <li><strong>Changing Content:</strong></li>
+            <div class="code-back">
+                <p>JavaScript</p>
+            </div>
+            <div class="code-back-bottom">
+                <p>element.textContent = <span style="color: blue;">"New Content"</span>;</p>
+            </div>
+        </ul>
+    </section>
+
+    <!-- ERROR HANDLING -->
+    <section class="main-section" id="Error_Handling">
+        <header>Error Handling</header>
+        <p><strong>Definition:</strong> Error handling is a mechanism that responds to and manages errors in code execution.</p>
+        <ul>
+            <li><span class="definition">Try...catch:</span> A statement that allows you to run code that may throw an error and catch that error to handle it gracefully.</li>
+            <div class="code-back">
+                <p>JavaScript</p>
+            </div>
+            <div class="code-back-bottom">
+                <p><span style="color: blue;">try</span> {</br>
+                    <span style="padding-left: 20px; color: gray;"> // code that may throw an error</span></br>
+                } <span style="color: blue;">catch</span> (error) {</br>
+                    <span style="padding-left: 20px; color: gray;"> // handle error</span></br>
+                }</p>
+            </div>
+        </ul>
+        <h1>Use:</h1>
+        <p>Error handling improves program stability by preventing crashes and managing exceptions.</p>
+    </section>
+
+    <!-- ASYNCHRONOUS JAVASCRIPT -->
+    <section class="main-section" id="Asynchronous_JavaScript">
+        <header>Asynchronous JavaScript</header>
+        <p><strong>Definition:</strong> Asynchronous programming allows for non-blocking code execution, enabling tasks to run simultaneously.</p>
+        <ul>
+            <li><strong>Callbacks:</strong> Functions passed as arguments to be executed later, often after a task completes.</li>
+            <li><strong>Promises:</strong> Objects that represent the eventual completion (or failure) of an asynchronous operation, allowing for cleaner code.</li>
+            <li><strong>async/await:</strong> Syntactic sugar for working with promises, making asynchronous code easier to read and write.</li>
+        </ul>
+        <h1>Use:</h1>
+        <p>Error handling improves program stability by preventing crashes and managing exceptions.</p>
+    </section>
+
+    <!-- MODERN JAVASCRIPT FEATURES -->
+    <section class="main-section" id="Modern_JavaScript_Features">
+        <header>Modern JavaScript Features</header>
+        <p><strong>Definition:</strong> Newer versions of JavaScript (ES6 and beyond) introduced features that enhance code readability and efficiency.</p>
+        <ul>
+            <li><strong>Template Literals:</strong> String literals allowing for multi-line strings and string interpolation (e.g., <span class="jLanguage"> `Hello, ${name}`</span>).</li>
+            <li><strong>Destructuring:</strong> A syntax for unpacking values from arrays or properties from objects into distinct variables.</li>
+            <li><strong>Modules:</strong> A feature for organizing code into separate files using <span class="jLanguage">import</span> and <span class="jLanguage">export</span>.</li>
+        </ul>
+        <h1>Use:</h1>
+        <p>Modern features streamline coding practices and improve maintainability.</p>
+    </section>
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>
